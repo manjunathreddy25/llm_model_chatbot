@@ -46,7 +46,7 @@ if prompt := st.chat_input("Ask me anything about coding..."):
     # Get AI response
     with st.chat_message("assistant"):
         response = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash",
             contents=prompt,
             config=types.GenerateContentConfig(system_instruction=SYSTEM_PROMPT)
         )
